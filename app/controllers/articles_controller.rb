@@ -13,7 +13,15 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    render plain: params[:article]
+    @article = Article.new(article_params)
+    if @article.save
+      redirect_to @article
+    end
   end
 
+  private
+
+  def article_params
+    params.expect(article: [:title, :description])
+  end
 end
