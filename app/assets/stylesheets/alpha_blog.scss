@@ -39,9 +39,10 @@ body {
   background-color: #ccc;
 }
 
-/* Other Classes for Page Styling */
+#copyright-email {
+  text-decoration: none;
 
-body {
-  background: #007bff;
-  background: linear-gradient(to right, #0062E6, #33AEFF);
+  &:hover {
+    text-decoration: underline;
+  }
 }
