@@ -23,10 +23,8 @@
   </head>
 
   <body>
-    <% flash.each do |type, message| %>
-      <%= message %>
-    <% end %>
-    
+    <%= render "shared/flash" %>
+
     <%= yield %>
   </body>
 </html>
