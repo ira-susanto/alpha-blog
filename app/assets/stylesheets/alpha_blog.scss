@@ -1,9 +1,29 @@
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: #ccc;
+}
+
 .navbar {
   background-color: #000 !important;
 }
 
 .nav-link {
   color: #fff !important;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.dropdown-item {
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 #logo {
@@ -26,17 +46,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 425px;
-}
-
-
-html,
-body {
-  height: 100%;
-}
-
-#page-content {
-  flex: 1 0 auto;
-  background-color: #ccc;
 }
 
 a {
