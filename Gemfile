@@ -67,3 +67,5 @@ gem "bootstrap", "~> 5.3"
 gem "dartsass-rails", "~> 0.5.1"
 
 gem "jquery-rails", "~> 4.6"
+
+gem "will_paginate", "~> 4.0"
