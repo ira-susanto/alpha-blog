@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <%= render "shared/errors", obj: @category %>
+
+      <%= form_with model: @category, data: { turbo: false }, class: "shadow p-3 mb-3 bg-info rounded" do |f| %>
+        <div class="form-group row">
+          <%= f.label :name, "Category Name", class: "col-2 col-form-label text-light" %>
+          <div class="col-10">
+            <%= f.text_field :name, placeholder: "Enter a category name", class: "form-control shadow rounded" %>
+          </div>
+        </div>
+
+        <div class="form-group row mt-3">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <%= f.submit class: "btn btn-outline-light btn-lg" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    
+    <%= link_to '[ Cancel and return to articles listing ]', articles_path, class: "text-center mt-3 text-info" %>
+  </div>
+</div>
