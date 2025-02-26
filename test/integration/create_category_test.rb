@@ -1,7 +1,6 @@
 require "test_helper"
 
 class CreateCategoryTest < ActionDispatch::IntegrationTest
-  
   setup do
     @admin_user = User.create(
       username: "john.doe",
