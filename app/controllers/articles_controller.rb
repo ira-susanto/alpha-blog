@@ -53,7 +53,7 @@ class ArticlesController < ApplicationController
   end
 
   def article_params
-    params.expect(article: [ :title, :description ])
+    params.expect(article: [ :title, :description, category_ids: [] ])
   end
 
   def require_same_user
