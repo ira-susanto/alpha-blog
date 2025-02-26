@@ -8,5 +8,5 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
-@import "bootstrap";
-@import "alpha_blog";
+@use "bootstrap";
+@use "alpha_blog";
